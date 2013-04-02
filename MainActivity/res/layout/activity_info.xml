@@ -1,0 +1,22 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InfoActivity" 
+    android:background="@drawable/back_activity" >
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="35dp"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="none"
+        android:text="Bu uygulama ingilizcede en çok kullanılan  500 kelimeyi uyarı şeklinde ekrana getirerek öğrenmenizi ve akılda kalmasını hızlandırır. Günün kelimesi ise hergün farklı bir kelimeyi daha detaylı olarak bilgilendirir. "
+        android:textColor="#fff" />
+
+</RelativeLayout>

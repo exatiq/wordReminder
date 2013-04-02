@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+ 
+    <PreferenceCategory android:title="AYARLAR" >
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="prefVibrate"
+            android:summary="Kelime uyarılarının titremesi sağlanır"
+            android:title="Titreşim" >
+        </CheckBoxPreference>
+        
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="prefSound"
+            android:summary="Sesli uyarı verir"
+            android:title="Ses" >
+        </CheckBoxPreference>
+
+        <ListPreference
+            android:key="prefTime"
+            android:entries="@array/uyariZamani"
+            android:summary="İstediğiniz saatte uyarı verir" 
+            android:entryValues="@array/uyariZamaniValues"
+            android:title="Uyarı Zamanı" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

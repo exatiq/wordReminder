@@ -1,0 +1,121 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_words" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="41dp"
+        android:layout_marginTop="54dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:orientation="vertical" >
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </LinearLayout>
+
+          <Button
+              android:id="@+id/btnInfo"
+              style="@style/ButtonText"
+              android:layout_width="150dp"
+              android:layout_height="80dp"
+              android:layout_alignBaseline="@+id/btnSettings"
+              android:layout_alignBottom="@+id/btnSettings"
+              android:layout_toRightOf="@+id/btnSettings"
+              android:background="@drawable/btn_purple"
+              android:onClick="infoActivity"
+              android:text="Hakkında"
+              android:textColor="#fff"
+              android:fontFamily="sans-serif-condensed"
+              android:textSize="20dp" />
+
+          <Button
+              android:id="@+id/btnWords"
+              style="@style/ButtonText"
+              android:layout_width="150dp"
+              android:layout_height="80dp"
+              android:layout_alignLeft="@+id/btnSettings"
+              android:layout_alignTop="@+id/linearLayout1"
+              android:alpha="150"
+              android:background="@drawable/btn_blue"
+              android:onClick="wordsActivity"
+              android:text="Kelimeler"
+              android:textColor="#fff"
+              android:fontFamily="sans-serif-condensed"
+              android:textSize="20dp" />
+
+          <Button
+              android:id="@+id/btnDaily"
+              style="@style/ButtonText"
+              android:layout_width="100dp"
+              android:layout_height="80dp"
+              android:layout_alignTop="@+id/linearLayout1"
+              android:layout_toRightOf="@+id/btnWords"
+              android:background="@drawable/btn_black"
+              android:onClick="dailyActivity"
+              android:text="Favoriler"
+              android:textColor="#fff"
+              android:fontFamily="sans-serif-condensed"
+              android:textSize="20dp" />
+
+     
+
+          <Button
+              android:id="@+id/btnSettings"
+              style="@style/ButtonText"
+              android:layout_width="100dp"
+              android:layout_height="80dp"
+              android:layout_alignParentLeft="true"
+              android:layout_below="@+id/btnWords"
+              android:layout_marginLeft="22dp"
+              android:background="@drawable/btn_yellow"
+              android:onClick="settingsActivity"
+              android:text="Ayarlar"
+              android:textColor="#fff"
+              android:fontFamily="sans-serif-condensed"
+              android:textSize="20dp" />
+          
+               <Button
+              android:id="@+id/notifyStop"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignBaseline="@+id/notifyStart"
+              android:layout_alignBottom="@+id/notifyStart"
+              android:layout_alignRight="@+id/btnDaily"
+              android:background="@drawable/btn_red"
+              android:text="stop"
+              android:textColor="#fff"
+              android:fontFamily="sans-serif-condensed"
+              android:textSize="20dp" 
+              android:onClick="StopListener"/>
+
+          <Button
+              android:id="@+id/notifyStart"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerInParent="true"
+              android:layout_marginLeft="56dp"
+              android:background="@drawable/btn_green"
+              android:text="start"
+              android:textColor="#fff"
+              android:fontFamily="sans-serif-condensed"
+              android:onClick="StartListener"
+              android:textSize="20dp" />
+          
+</RelativeLayout>

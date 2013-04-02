@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="uyariZamani">
+        <item name="1">Her Saat</item>
+        <item name="3">3 Saat Arayla</item>
+        <item name="6">6 Saat Arayla</item>
+        <item name="12">12 Saat Arayla</item>
+        <item name="24">24 Saat Arayla</item>
+    </string-array>
+	<string-array name="uyariZamaniValues">
+        <item name="1">1</item>
+        <item name="3">3</item>
+        <item name="6">6</item>
+        <item name="12">12</item>
+        <item name="24">24</item>
+    </string-array>
+	
+</resources>

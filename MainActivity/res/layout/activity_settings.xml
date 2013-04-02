@@ -1,0 +1,149 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/back_activity"
+    android:gravity="left"
+    tools:context=".SettingsActivity" 
+    android:layout_marginTop="10dp">
+
+       <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+         >
+    
+    <LinearLayout
+        
+        android:id="@+id/linearLayoutSes"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:background="@drawable/grid_blue">
+      
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:text="Ses"
+            android:textColor="#fff" />
+
+        <CheckBox
+            android:id="@+id/chkSes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="270dp"
+            android:layout_marginRight="5dp"
+            android:gravity="right|center_vertical"
+            android:scrollHorizontally="true" />
+
+    </LinearLayout>
+
+        <LinearLayout
+        android:id="@+id/linearLayoutVibrate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearLayout1"
+        android:layout_alignTop="@+id/notifyStop"
+        android:orientation="horizontal" 
+        android:background="@drawable/grid_blue"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:text="Titreşim"
+            android:textColor="#fff" />
+
+        <CheckBox
+            android:id="@+id/chkVibrate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="240dp"
+            android:layout_marginRight="5dp"
+            android:gravity="right|center_vertical"
+            android:scrollHorizontally="true" />
+
+    </LinearLayout>
+
+   
+        <LinearLayout
+        android:id="@+id/linearLayoutUyari"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearLayout1"
+        android:layout_alignTop="@+id/notifyStop"
+        android:orientation="horizontal" 
+        android:layout_marginTop="10dp"
+         android:background="@drawable/grid_blue">
+        
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:text="Uyarı Zamanlama"
+            android:textColor="#fff" />
+            
+          <Spinner
+           android:id="@+id/spnTime"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentLeft="true" 
+           android:gravity="right|center_vertical"
+           android:layout_marginLeft="75dp" 
+           />
+            
+            
+            
+        </LinearLayout>
+        
+        
+ </LinearLayout>
+ 
+          <LinearLayout
+        android:id="@+id/linearLayoutButtons"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+</LinearLayout>
+          
+          
+          <Button
+              android:id="@+id/notifyStart"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_above="@+id/notifyStop"
+              android:layout_alignParentLeft="true"
+              android:layout_marginBottom="23dp"
+              android:background="@drawable/btn_green"
+              android:text="start service" 
+              android:textColor="#fff"
+              android:textSize="20dp"/>
+
+          <Button
+              android:id="@+id/notifyStop"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_alignParentBottom="true"
+              android:layout_alignParentLeft="true"
+              android:layout_marginBottom="29dp"
+              android:background="@drawable/btn_red"
+              android:text="stop service" 
+              android:textColor="#fff"
+              android:textSize="20dp"/>
+
+          <TextView
+              android:id="@+id/timer"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_above="@+id/notifyStart"
+              android:layout_centerHorizontal="true"
+              android:gravity="left|center_vertical"
+              android:text="00:00:00"
+              android:textColor="#fff"
+              android:textSize="25dp" />
+
+</RelativeLayout>
